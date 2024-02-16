@@ -1,0 +1,21 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "",
+        "/opt/carla-0.9.11/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.egg",
+        "/opt/carla-0.9.11/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.egg",
+        "/opt/carla-0.9.11/PythonAPI/carla/agents",
+        "/home/bigdavid/ocs2_ws/src/raisimLib/raisim/linux/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "",
+        "/opt/carla-0.9.11/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.egg",
+        "/opt/carla-0.9.11/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.egg",
+        "/opt/carla-0.9.11/PythonAPI/carla/agents",
+        "/home/bigdavid/ocs2_ws/src/raisimLib/raisim/linux/lib"
+    ],
+    "files.associations": {
+        "random": "cpp"
+    }
+}
