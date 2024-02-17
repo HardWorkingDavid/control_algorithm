@@ -16,6 +16,7 @@
         "/home/bigdavid/ocs2_ws/src/raisimLib/raisim/linux/lib"
     ],
     "files.associations": {
-        "random": "cpp"
+        "random": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd419/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd419.dir/build.make CMakeFiles/cmTC_fd419.dir/build
+make[1]: 进入目录“/home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fd419.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fd419.dir/CheckSymbolExists.c.o   -c /home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fd419
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd419.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fd419.dir/CheckSymbolExists.c.o  -o cmTC_fd419 
+/usr/bin/ld: CMakeFiles/cmTC_fd419.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fd419.dir/build.make:87：cmTC_fd419] 错误 1
+make[1]: 离开目录“/home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_fd419/fast] 错误 2
+
+File /home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f46f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f46f.dir/build.make CMakeFiles/cmTC_5f46f.dir/build
+make[1]: 进入目录“/home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5f46f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5f46f.dir/CheckFunctionExists.c.o   -c /usr/local/cmake/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5f46f
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f46f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_5f46f.dir/CheckFunctionExists.c.o  -o cmTC_5f46f -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5f46f.dir/build.make:87：cmTC_5f46f] 错误 1
+make[1]: 离开目录“/home/bigdavid/视频/Control_algorithm/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_5f46f/fast] 错误 2
+
+
