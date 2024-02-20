@@ -1,8 +1,0 @@
-prefix=/home/bigdavid/视频/Control_algorithm/install
-
-Name: Stanley
-Description: Description of Stanley
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

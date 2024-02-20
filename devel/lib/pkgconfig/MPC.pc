@@ -1,8 +1,0 @@
-prefix=/home/bigdavid/视频/Control_algorithm/devel
-
-Name: MPC
-Description: Description of MPC
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
