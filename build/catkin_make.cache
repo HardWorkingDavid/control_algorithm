@@ -1,0 +1,2 @@
+LQR:MPC:Purepursuit:Stanley
+-DCATKIN_DEVEL_PREFIX=/home/bigdavid/视频/Control_algorithm/devel -DCMAKE_INSTALL_PREFIX=/home/bigdavid/视频/Control_algorithm/install -G Unix Makefiles

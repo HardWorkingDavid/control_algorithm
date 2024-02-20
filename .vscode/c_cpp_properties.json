@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/bigdavid/视频/Control_algorithm/src/LQR/include/**",
+        "/home/bigdavid/视频/Control_algorithm/src/MPC/include/**",
+        "/home/bigdavid/视频/Control_algorithm/src/Purepursuit/include/**",
+        "/home/bigdavid/视频/Control_algorithm/src/Stanley/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
