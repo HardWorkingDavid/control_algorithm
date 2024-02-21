@@ -110,7 +110,7 @@ vector<double> MPC::LMPC(MatrixXd xref, Vector3d x0, MatrixXd ref_delta, Kinemat
 
     if (!solver.data()->setLinearConstraintsMatrix(linearMatrix)) return {};
     // Define the equality constraint vector beq.
-  //  VectorXd beq(M); // 9 x 1
+    VectorXd beq(M); // 10 x 1
   //  for (int i = 0; i < M; i++)
   //  {
  //       beq(i) = 0;
